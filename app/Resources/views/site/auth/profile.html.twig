@@ -1,0 +1,226 @@
+{% extends "site/layouts/layout.html.twig" %}
+
+{% block body %}    
+    <div class="container px-lg-5 mb-5">
+        <div class="row pt-2 pt-lg-2 px-md-5">
+            <div class="col-12 mt-4 mt-lg-5">
+            <div class="box-shadow">
+                <div class="col-12 bg-white pb-4">
+                <div class="row pb-3 pt-4" style="background-color: #f9f9f9;">
+                    <div class="col-3 col-md-2 px-md-4">
+                        <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/no-photo.jpg') }}">
+                    </div>
+                    <div class="col-9 col-md-10 pt-sm-3">
+                        <p class="text-topics">
+                        <span class="h6"><span class="fa fa-user"></span> Eshnazarov Jamshid</span> <span class="badge badge-pill badge-danger">off</span><br>
+                        <span class="ft-sc d-block mt-1 mb-2 text-secondary"> <span class="fa fa-clock-o"></span> So'nggi tashrif: 19.09.2017 00:21 da</span>
+                        <a role="button" href="#config" class="btn btn-primary btn-sm btn-circle" data-toggle="modal"><span class="fa fa-cog"></span></a>
+                        <a role="button" href="/login" class="btn btn-danger btn-sm btn-circle ft-th"><span class="fa fa-close"></span> Chiqish</a>
+                        <a href="#" class="btn btn-primary btn-sm btn-circle ft-th" role="button"><span class="fa fa-envelope"></span> Xabar yuborish</a> 
+                        <a href="#" class="btn btn-warning btn-sm btn-circle ft-th" role="button"><span class="fa fa-lock"></span> Bloklash</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Qoshish -->
+                <div class="modal" id="config" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Shaxsiy ma'lumotlarni tahrirlash</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                            <div class="alert alert-danger ft-sc" role="alert">
+                                Ma'lumotlarni to'ldirishda xatolik yuz berdi:<br>
+                                * E-mail ko'rsatilmadi
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Ismi:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Familyasi:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Otasining ismi:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="exampleFormControlInput1">
+                                    <span class="text-danger">* </span>E-mail:
+                                </label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    <span class="text-danger">* </span>Telefon raqami:
+                                </label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="+(998xx) xxx-xx-xx">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    Qo'shimcha telefon raqami 1:
+                                </label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="+(998xx) xxx-xx-xx">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    Qo'shimcha telefon raqami 2:
+                                </label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="+(998xx) xxx-xx-xx">
+                                </div>
+                                <div class="form-group">
+                                <label for="exampleFormControlSelect1">Viloyat:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Toshkent</option>
+                                    <option>Andijon</option>
+                                    <option>Samarqand</option>
+                                    <option>Navoiy</option>
+                                    <option>Buxoro</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                <label for="exampleFormControlSelect1">Tuman/Shahar:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Toshkent shahri</option>
+                                    <option>Qatshi</option>
+                                    <option>Uchquduq</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    Ko'cha:
+                                </label>
+                                <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    Uy:
+                                </label>
+                                <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tug'ilgan vaqti:</label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="dd.mm.yyyy">
+                                </div>
+                                <div class="form-group">
+                                <label for="exampleFormControlSelect1">Darajasi:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Admin</option>
+                                    <option>Moderator</option>
+                                    <option>Oddiy foydalanuvchi</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    <a href="#change_pass" data-toggle="modal" data-dismiss="modal">Parolni o'zgartirish</a>
+                                </label>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <a href="#" role="button" class="btn btn-sm btn-secondary btn-circle" data-dismiss="modal">Chiqish</a>
+                        <a href="#" role="button" class="btn btn-sm btn-primary btn-circle">
+                            <i class="fa fa-check"></i> O'rnatish
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Parol -->
+                <div class="modal" id="change_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Parolni o'zgartirish</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                            <div class="alert alert-danger ft-sc" role="alert">
+                                Parol noto'g'ri kiritildi
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    <span class="text-danger">* </span>Hozirgi parol:
+                                </label>
+                                <input type="password" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    <span class="text-danger">* </span>Yangi parol:
+                                </label>
+                                <input type="password" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">
+                                    <span class="text-danger">* </span>Yangi parolni tasdiqlang:
+                                </label>
+                                <input type="password" class="form-control" id="recipient-name">
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <a href="#" role="button" class="btn btn-sm btn-secondary btn-circle" data-dismiss="modal">Chiqish</a>
+                        <a href="#" role="button" class="btn btn-sm btn-primary btn-circle">
+                            <i class="fa fa-check"></i> Tasdiqlash
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row" style="border-top: solid 1px; border-color: #eeeeee;">
+                    <!-- Tab panes -->
+                    <div class="col-12 px-sm-5 px-4">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="row">
+                            <div class="col-12 mt-4 mt-sm-5 mb-4" style="border-left: solid 3px; border-color: #007BFF;">
+                            <span class="text-primary h6">Mening shaxsiy ma'lumotlarim</span>
+                            </div>
+                            <div class="col-md-4">
+                            <p class="text-topics"><b>Номер телефона:</b> 998942967146</p>
+                            <p class="text-topics"><b>Пароль:</b> *********</p>
+                            <p class="text-topics"><b>Дата регистрации:</b> Сентябрь 02, 2017 17:54</p>
+                            <p class="text-topics"><b>Последний вход:</b> Сентябрь 18, 2017 18:55</p>
+                            </div>
+                            <div class="col-md-4">
+                            <p class="text-topics"><b>Фамилия:</b> Eshnazarov</p>
+                            <p class="text-topics"><b>Имя:</b> Jamshid</p>
+                            <p class="text-topics"><b>Отчество:</b> Eshmurod o'g'li</p>
+                            <p class="text-topics"><b>Дата рождения:</b> 25.07.1994</p>
+                            <p class="text-topics"><b>Область:</b> Qashqadaryo</p>
+                            <p class="text-topics"><b>Район:</b> Koson</p>
+                            <p class="text-topics"><b>Улица:</b> -</p>
+                            <p class="text-topics"><b>Дом:</b> -</p>
+                            </div>
+                            <div class="col-md-4">
+                            <p class="text-topics"><b>Email:</b> jamik1425@gmail.com</p>
+                            <p class="text-topics"><b>Доп.телефон:</b> -</p>
+                            <p class="text-topics"><b>Доп.телефон:</b> -</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

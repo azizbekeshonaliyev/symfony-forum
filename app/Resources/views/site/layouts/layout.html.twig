@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Kerakli meta taglar -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}Forum!{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/font-awesome.min.css') }}">
+    {% block stylesheets %}{% endblock %}
+  </head>
+
+  <body style="background-color: #eeeeee;">
+    <!-- Main Nav -->
+    {% include "site/layouts/nav.html.twig" %}
+    <!-- End TopPanel -->
+    
+    <!-- Content -->
+    {% block body %}{% endblock %}
+    <!-- End Content -->
+
+    <!-- Sozlovchi JavaScript -->
+    <!-- jQuery birinchi, keyin Popper js, keyin Bootstrap js -->
+    <script src="{{ asset('/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('/js/popper.min.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <!-- Qo`shimcha js -->
+    {% block javascripts %}{% endblock %}
+  </body>
+
+</html>

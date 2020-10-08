@@ -1,0 +1,370 @@
+{% extends "site/layouts/layout.html.twig" %}
+
+{% block body %}
+    {{ include("site/components/page_nav.html.twig", {title: 'Top questions'}) }}
+    <div class="container mb-5">
+      <div class="row pt-4">
+        <div class="col-12 col-sm-12 col-md-9">
+          <div class="box-shadow mb-4">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics pr-auto">Umumiy bo'lim</span>
+              <span class="badge badge-secondary px-1 py-1" style="float: right;">Javoblar: 593</span>
+              <span class="badge badge-secondary px-1 py-1 mr-2" style="float: right;">Savollar: 87</span>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nH0ACPHVUQJXR.jpg') }}">
+                  </div>
+                  <p>
+                    <a href="#">Jamshid</a>
+                    <small class="text-topics">
+                      &nbsp;<span class="badge badge-danger">off</span>
+                    </small><br>
+                    <span class="ft-th"><span class="badge badge-primary">moderator</span></span>
+                  </p>
+                  <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p>
+                </div>
+                <div class="col-8">
+                  <span class="text-secondary h6"><span class="fa fa-check-square"></span></span>&nbsp;
+                  <a href="{{ path('question_show',{question: 1}) }}" class="h6 text-topics">10 Kids Unaware of Their Halloween Costume</a>
+                  <p class="text-secondary">
+                    It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.
+                  </p>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      <span class="badge badge-primary">moderator</span>
+                       &nbsp;|&nbsp;
+                      <span class="fa fa-user"></span>&nbsp;Qo'shdi: <a href="#">Eshnazarov Jamshid</a>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-clock-o"></span>&nbsp;Qo'shilgan: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-bars"></span>&nbsp;Bo'lim: <a href="#">Umumiy bo'lim</a>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <h6>
+                    <span class="badge badge-primary"><span class="fa fa-comments"></span> 54</span>
+                    <span class="badge badge-primary"><span class="fa fa-eye"></span> 158</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nAS76EQUUW7ON.jpg') }}">
+                  </div>
+                  <p>
+                    <a href="#">Boris</a>
+                    <small class="text-topics">
+                      &nbsp;<span class="badge badge-success">on</span>
+                    </small>
+                  </p>
+                  <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p>
+                </div>
+                <div class="col-8">
+                  <span class="text-secondary h6"><span class="fa fa-check-square"></span></span>&nbsp;
+                  <a href="#" class="h6 text-topics">10 Kids Unaware of Their Halloween Costume</a>
+                  <p class="text-secondary">
+                    It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.
+                  </p>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      <span class="badge badge-primary">moderator</span>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-user"></span>&nbsp;Qo'shdi: <a href="#">Eshnazarov Jamshid</a>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-clock-o"></span>&nbsp;Qo'shilgan: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-bars"></span>&nbsp;Bo'lim: <a href="#">Umumiy bo'lim</a>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <h6>
+                    <span class="badge badge-primary"><span class="fa fa-comments"></span> 54</span>
+                    <span class="badge badge-primary"><span class="fa fa-eye"></span> 158</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nAN5HVJ4MB0BL.jpg') }}">
+                  </div>
+                  <p>
+                    <a href="#">Ninuwa</a>
+                    <small class="text-topics">
+                      &nbsp;<span class="badge badge-danger">off</span>
+                    </small><br>
+                    <span class="ft-th"><span class="badge badge-danger">administrator</span></span>
+                  </p>
+                  <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p>
+                </div>
+                <div class="col-8">
+                  <span class="text-success h6"><span class="fa fa-check-square"></span></span>&nbsp;
+                  <a href="#" class="h6 text-topics">10 Kids Unaware of Their Halloween Costume</a>
+                  <p class="text-secondary">
+                    It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.
+                  </p>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                      <!-- &nbsp;|&nbsp; -->
+                      <span class="fa fa-user"></span>&nbsp;Qo'shdi: <a href="#">Eshnazarov Jamshid</a>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-clock-o"></span>&nbsp;Qo'shilgan: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-bars"></span>&nbsp;Bo'lim: <a href="#">Umumiy bo'lim</a>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <h6>
+                    <span class="badge badge-primary"><span class="fa fa-comments"></span> 54</span>
+                    <span class="badge badge-primary"><span class="fa fa-eye"></span> 158</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/no-photo.jpg') }}">
+                  </div>
+                  <p>
+                    <a href="#">SaMa</a>
+                    <small class="text-topics">
+                      &nbsp;<span class="badge badge-danger">off</span>
+                    </small>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-8">
+                  <span class="text-success h6"><span class="fa fa-check-square"></span></span>&nbsp;
+                  <a href="#" class="h6 text-topics">10 Kids Unaware of Their Halloween Costume</a>
+                  <p class="text-secondary">
+                    It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.
+                  </p>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                      <!-- &nbsp;|&nbsp; -->
+                      <span class="fa fa-user"></span>&nbsp;Qo'shdi: <a href="#">Eshnazarov Jamshid</a>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-clock-o"></span>&nbsp;Qo'shilgan: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-bars"></span>&nbsp;Bo'lim: <a href="#">Umumiy bo'lim</a>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <h6>
+                    <span class="badge badge-primary"><span class="fa fa-comments"></span> 54</span>
+                    <span class="badge badge-primary"><span class="fa fa-eye"></span> 158</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nAS76EQUUW7ON.jpg') }}">
+                  </div>
+                  <p>
+                    <a href="#">Zafar</a>
+                    <small class="text-topics">
+                      &nbsp;<span class="badge badge-success">on</span>
+                    </small>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-8">
+                  <span class="text-secondary h6"><span class="fa fa-check-square"></span></span>&nbsp;
+                  <a href="#" class="h6 text-topics">10 Kids Unaware of Their Halloween Costume</a>
+                  <p class="text-secondary">
+                    It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.
+                  </p>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                      <!-- &nbsp;|&nbsp; -->
+                      <span class="fa fa-user"></span>&nbsp;Qo'shdi: <a href="#">Eshnazarov Jamshid</a>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-clock-o"></span>&nbsp;Qo'shilgan: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-bars"></span>&nbsp;Bo'lim: <a href="#">Umumiy bo'lim</a>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <h6>
+                    <span class="badge badge-primary"><span class="fa fa-comments"></span> 54</span>
+                    <span class="badge badge-primary"><span class="fa fa-eye"></span> 158</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nAN5HVJ4MB0BL.jpg') }}">
+                  </div>
+                  <p>
+                    <a href="#">Jamshid</a>
+                    <small class="text-topics">
+                      &nbsp;<span class="badge badge-danger">off</span>
+                    </small>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-8">
+                  <span class="text-secondary h6"><span class="fa fa-check-square"></span></span>&nbsp;
+                  <a href="#" class="h6 text-topics">10 Kids Unaware of Their Halloween Costume</a>
+                  <p class="text-secondary">
+                    It's one thing to subject yourself to a Halloween costume mishap because, hey, that's your prerogative.
+                  </p>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                      <!-- &nbsp;|&nbsp; -->
+                      <span class="fa fa-user"></span>&nbsp;Qo'shdi: <a href="#">Eshnazarov Jamshid</a>
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-clock-o"></span>&nbsp;Qo'shilgan: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      <span class="fa fa-bars"></span>&nbsp;Bo'lim: <a href="#">Umumiy bo'lim</a>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-2">
+                  <h6>
+                    <span class="badge badge-primary"><span class="fa fa-comments"></span> 54</span>
+                    <span class="badge badge-primary"><span class="fa fa-eye"></span> 158</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-12 my-3">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <span class="page-link">Oldingi</span>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">
+                  2
+                </span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Keyingi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3">
+        <div class="box-shadow mb-4">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Ko'p ko'rilganlar</span>
+            </div>
+            <div class="col-12 bg-white py-3">
+              <ul class="list-unstyled text-secondary">
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 158</span>
+                  <a href="#" class="text-secondary">10 Kids Unaware of Their Halloween Costume</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 113</span>
+                  <a href="#" class="text-secondary">What Instagram Ads Will Look Like</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 102</span>
+                  <a href="#" class="text-secondary">The Future of Magazines Is on Tablets</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 100</span>
+                  <a href="#" class="text-secondary">Pinterest Now Worth $3.8 Billion</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 91</span>
+                  <a href="#" class="text-secondary">Forum with long description and subforums</a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-shadow mb-4">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Bo'limlar</span>
+            </div>
+            <div class="col-12 bg-white py-3">
+              <ul class="list-unstyled text-secondary">
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Umumiy bo'lim</a>
+                </li>
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Jamiyat va inson</a>
+                </li>
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Umumiy savol va javoblar</a>
+                </li>
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Sug'urta turlari haqida</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-shadow">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Teglar buluti</span>
+            </div>
+            <div class="col-12 bg-white py-3">
+              <h6 class="text-center">
+                <span class="badge badge-secondary mb-2 ml-1">savol</span>
+                <span class="badge badge-secondary mb-2 ml-1">kofalot</span>
+                <span class="badge badge-secondary mb-2 ml-1">yangi sug'urta</span>
+                <span class="badge badge-secondary mb-2 ml-1">nima uchun</span>
+                <span class="badge badge-secondary mb-2 ml-1">uy-joy sug'urtasi</span>
+                <span class="badge badge-secondary mb-2 ml-1">savol</span>
+                <span class="badge badge-secondary mb-2 ml-1">kofalot</span>
+                <span class="badge badge-secondary mb-2 ml-1">yangi sug'urta</span>
+                <span class="badge badge-secondary mb-2 ml-1">nima uchun</span>
+                <span class="badge badge-secondary mb-2 ml-1">uy-joy sug'urtasi</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

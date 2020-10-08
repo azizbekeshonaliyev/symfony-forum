@@ -1,0 +1,38 @@
+app_annotations:
+   resource: "@AppBundle/Controller"
+   type: annotation
+
+home:
+  methods:  [GET]
+  path: /
+  defaults: { _controller: 'AppBundle\Controller\Site\HomeController::homeAction' }
+
+register:
+  methods:  [GET]
+  path: /register
+  defaults: { _controller: 'AppBundle\Controller\Site\AuthController::registerAction' }
+
+login:
+  methods:  [GET]
+  path: /login
+  defaults: { _controller: 'AppBundle\Controller\Site\AuthController::loginAction' }
+
+profile:
+  methods:  [GET]
+  path: /profile
+  defaults: { _controller: 'AppBundle\Controller\Site\AuthController::profileAction' }
+
+question_index:
+  methods: [Get]
+  path: /questions
+  defaults: { _controller: 'AppBundle\Controller\Site\QuestionController::indexAction' }
+
+question_create:
+  methods: [Get]
+  path: /questions/create
+  defaults: { _controller: 'AppBundle\Controller\Site\QuestionController::createAction' }
+
+question_show:
+  methods: [Get]
+  path: /questions/{question}
+  defaults: { _controller: 'AppBundle\Controller\Site\QuestionController::showAction' }

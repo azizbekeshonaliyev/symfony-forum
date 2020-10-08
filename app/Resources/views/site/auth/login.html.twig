@@ -1,0 +1,47 @@
+{% extends "site/layouts/layout.html.twig" %}
+
+{% block body %}    
+    <div class="container pt-5">
+        <div class="col-12 col-sm-9 col-md-6 col-lg-5 box-admin py-3 mx-auto my-auto">
+          <div class="col-12 pb-3 mb-4 text-center" style="border-bottom: solid 1px; border-color: #eeeeee;">
+            <div class="text-center">
+              <span class="text-topics h5">Kirish</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="alert alert-danger ft-sc" role="alert">
+              Login yoki parol xato kiritildi
+            </div>
+            <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Telefon raqami:</label>
+              <input type="input" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9989xxxxxxxx">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Parol:</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Parol">
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Meni eslab qolish</span>
+                </label>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-block btn-circle" href="/admin">Kirish</a><br>
+            <span class="text-secondary text-center d-block ft-th">yoki ijtimoiy tarmoqlar orqali kirish:</span>
+            <div class="text-center mt-3">
+            <a class="btn btn-primary btn-circle btn-sm" href="index.html"><span class="fa fa-facebook-official"></span> Facebook</a>
+            <a class="btn btn-danger btn-circle btn-sm" href="index.html"><span class="fa fa-google-plus"></span> Google</a>
+          </div>
+          </form>
+          <div class="text-center mt-3">
+            <span class="text-topics ft-th">Akkauntingiz yo'qmi? </span> <a class="ft-th" href="/register">Ro'yhatdan o'ting</a>
+          </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Content -->
+{% endblock %}

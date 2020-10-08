@@ -1,0 +1,416 @@
+{% extends "site/layouts/layout.html.twig" %}
+
+{% block body %}
+    {{ include("site/components/page_nav.html.twig", {title: 'Question show'}) }}
+
+    <div class="container mb-5">
+      <div class="row pt-4">
+        <div class="col-12 col-sm-12 col-md-9">
+          <div class="box-shadow mb-4">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Savol: 10 Kids Unaware of Their Halloween Costume</span>
+              <span class="badge badge-secondary px-1 py-1" style="float: right;">Ko'rilgan: 86</span>
+              <span class="badge badge-secondary mr-2 px-1 py-1" style="float: right;">Javoblar: 12</span>         
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nH0ACPHVUQJXR.jpg') }}">
+                  </div>
+                  <p>
+                    <!-- <a href="#">Jamshid</a> -->
+                    <small class="text-topics">
+                      <span class="badge badge-success">on</span>
+                      <span class="badge badge-primary">moderator</span>
+                    </small>
+                  </p>
+                  <p>
+                    <a href="#"><span class="badge badge-pill badge-primary"><span class="fa fa-thumbs-up"></span> 6</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-pill badge-danger"><span class="fa fa-thumbs-down"></span> 1</span></a>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-10">
+                  <a href="#" class="h6 text-topics">Jamshid Eshnazarov</a>
+                  <small class="text-secondary"> - savol berdi</small>
+                  <small class="text-danger">(moderatsiyada)</small>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="O'chirish" class="text-secondary">
+                      <span class="fa fa-trash"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Qabul qilish" class="text-secondary">
+                      <span class="fa fa-check"></span>
+                    </a>
+                  </span>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      Vaqt: 2017-09-07 10:05
+                      &nbsp;|&nbsp;
+                      Bo'lim: <a href="#">Umumiy bo'lim</a>
+                      &nbsp;|&nbsp;
+                      Teglar: <a href="#"><span class="badge badge-secondary">sug'urta</span></a> <a href="#"><span class="badge badge-secondary">omonat</span></a>
+                    </span>
+                  </p>
+                  <span class="text-topics">
+                    <p>
+                      Hi there!
+                    </p>
+                    <p>
+                      I just want to welcome you to the new One Click - Premium Vanilla Forum.<br>
+                      This was made to be very fast and easy for you to start giving support.
+                    </p>
+                    <p>
+                      With just one click you get all the installation complete after 2 minutes.
+                    </p>
+                    <p>
+                      You got a built in Style Editor that you can use to easily customize your forum.
+                      So, I really hope you like this.
+                    </p>
+                    <p>
+                    Cheers
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12 bg-white py-3 text-center topics">
+              <span class="h6">Javoblar:</span>
+            </div> -->
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nAN5HVJ4MB0BL.jpg') }}">
+                  </div>
+                  <p>
+                    <!-- <a href="#">Jamshid</a> -->
+                    <small class="text-topics">
+                      <span class="badge badge-success">on</span>
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                    </small>
+                  </p>
+                  <p class="carma">
+                    <a href="#"><span class="badge badge-pill badge-primary"><span class="fa fa-thumbs-up"></span> 6</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-pill badge-danger"><span class="fa fa-thumbs-down"></span> 1</span></a>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-10">
+                  <!-- <span class="text-success h6"><span class="fa fa-check-square"></span></span>&nbsp; -->
+                  <a href="#" class="h6 text-topics">Ninuwa</a>
+                  <small class="text-success"> - to'g'ri javob berdi</small>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Javob qaytarish" class="text-secondary">
+                      <span class="fa fa-reply"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Javob noto'g'ri" class="text-success">
+                      <span class="fa fa-check-square"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="O'chirish" class="text-secondary">
+                      <span class="fa fa-trash"></span>
+                    </a>
+                  </span>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      Vaqt: 2017-09-07 10:05
+                    </span>
+                  </p>
+                  <span class="text-topics">
+                    <p>
+                      This is the Most Pretty and the Most Easy forum I've ever seen!<br>
+                      Well done. ;)
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nYAYDDFF66I1J.jpg') }}">
+                  </div>
+                  <p>
+                    <!-- <a href="#">Jamshid</a> -->
+                    <small class="text-topics">
+                      <span class="badge badge-danger">off</span>
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                    </small>
+                  </p>
+                  <p class="carma">
+                    <a href="#"><span class="badge badge-pill badge-primary"><span class="fa fa-thumbs-up"></span> 6</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-pill badge-danger"><span class="fa fa-thumbs-down"></span> 1</span></a>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-10">
+                  <a href="#" class="h6 text-topics">Boris</a>
+                  <small class="text-secondary"> - javob berdi</small>
+                  <small class="text-danger">(moderatsiyada)</small>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Javob qaytarish" class="text-secondary">
+                      <span class="fa fa-reply"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Javob to'g'ri" class="text-secondary">
+                      <span class="fa fa-check-square"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="O'chirish" class="text-secondary">
+                      <span class="fa fa-trash"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Qabul qilish" class="text-secondary">
+                      <span class="fa fa-check"></span>
+                    </a>
+                  </span>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      Vaqt: 2017-09-07 10:05
+                    </span>
+                  </p>
+                  <span class="text-topics">
+                    <p>
+                      Wow, this forum is AMAZING!!!<br>
+                      Congrats!!!
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nYAYDDFF66I1J.jpg') }}">
+                  </div>
+                  <p>
+                    <!-- <a href="#">Jamshid</a> -->
+                    <small class="text-topics">
+                      <span class="badge badge-danger">off</span>
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                    </small>
+                  </p>
+                  <p class="carma">
+                    <a href="#"><span class="badge badge-pill badge-primary"><span class="fa fa-thumbs-up"></span> 6</span></a>&nbsp;
+                    <a href="#"><span class="badge badge-pill badge-danger"><span class="fa fa-thumbs-down"></span> 1</span></a>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-10">
+                  <a href="#" class="h6 text-topics">Boris</a>
+                  <small class="text-secondary"> - javob berdi</small>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Javob qaytarish" class="text-secondary">
+                      <span class="fa fa-reply"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Javob to'g'ri" class="text-secondary">
+                      <span class="fa fa-check-square"></span>
+                    </a>
+                  </span>
+                  <span class="text-secondary h6 mr-2 reply" style="float: right;">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="O'chirish" class="text-secondary">
+                      <span class="fa fa-trash"></span>
+                    </a>
+                  </span>
+                  <p class="text-secondary">
+                    <span class="ft-th">
+                      Vaqt: 2017-09-07 10:05
+                    </span>
+                  </p>
+                  <span class="text-topics">
+                    <p>
+                      <div class="replied">
+                        <p><span><a href="#" class="text-secondary">Ninuwa</a></span></p>
+                        This is the Most Pretty and the Most Easy forum I've ever seen!<br>
+                        Well done. ;)<small class="text-secondary"> - ga javob berdi</small>
+                      </div>
+                    </p>
+                    <p>
+                      It looks real good!<br><br>
+
+                      All elements are well organized, just like a forum needs to be.<br>
+
+                      I realy love this.<br>
+
+                      Good work. ;)
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-white py-4 topics">
+              <div class="row">
+                <div class="col-2 no-guttesr text-center">
+                  <div class="col-9 mx-auto mb-2 px-0 px-sm-0 px-md-0 px-lg-0 px-xl-3">
+                    <img class="rounded-circle img-fluid" src="{{ asset('img/avatar/nH0ACPHVUQJXR.jpg') }}">
+                  </div>
+                  <p>
+                    <!-- <a href="#">Jamshid</a> -->
+                    <small class="text-topics">
+                      <span class="badge badge-success">on</span>
+                      <!-- <span class="badge badge-primary">moderator</span> -->
+                    </small>
+                  </p>
+                  <!-- <p>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-quote-right"></span> 54</span></a>
+                    <a href="#"><span class="badge badge-secondary"><span class="fa fa-comment"></span> 593</span></a>
+                  </p> -->
+                </div>
+                <div class="col-10 pr-5">
+                  <div class="form-group px-3 py-3 javob">
+                    <label for="exampleFormControlTextarea1" class="text-secondary ft-th">Javob berish</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Javobingizni yozing..." rows="3"></textarea>
+                  </div>
+                  <div class="text-right">
+                    <a class="btn btn-secondary btn-sm" href="#" role="button"><span class="fa fa-smile-o"></span></a>
+                    <a class="btn btn-primary btn-sm" href="#" role="button">Yuborish</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 my-3">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <span class="page-link">Oldingi</span>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">
+                  2
+                </span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Keyingi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3">
+        <div class="box-shadow mb-4">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Ko'p ko'rilganlar</span>
+            </div>
+            <div class="col-12 bg-white py-3">
+              <ul class="list-unstyled text-secondary">
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 158</span>
+                  <a href="#" class="text-secondary">10 Kids Unaware of Their Halloween Costume</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 113</span>
+                  <a href="#" class="text-secondary">What Instagram Ads Will Look Like</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 102</span>
+                  <a href="#" class="text-secondary">The Future of Magazines Is on Tablets</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 100</span>
+                  <a href="#" class="text-secondary">Pinterest Now Worth $3.8 Billion</a> 
+                </li>
+                <li class="list-item">
+                  <span class="badge badge-secondary"><span class="fa fa-eye"></span> 91</span>
+                  <a href="#" class="text-secondary">Forum with long description and subforums</a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-shadow mb-4">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Bo'limlar</span>
+            </div>
+            <div class="col-12 bg-white py-3">
+              <ul class="list-unstyled text-secondary">
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Umumiy bo'lim</a>
+                </li>
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Jamiyat va inson</a>
+                </li>
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Umumiy savol va javoblar</a>
+                </li>
+                <li class="list-item">
+                  <span class="fa fa-caret-right"></span>&nbsp;&nbsp;<a href="#" class="text-secondary">Sug'urta turlari haqida</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-shadow">
+            <div class="col-12 bg-topics py-3">
+              <span class="h6 text-topics">Teglar buluti</span>
+            </div>
+            <div class="col-12 bg-white py-3">
+              <h6 class="text-center">
+                <span class="badge badge-secondary mb-2 ml-1">savol</span>
+                <span class="badge badge-secondary mb-2 ml-1">kofalot</span>
+                <span class="badge badge-secondary mb-2 ml-1">yangi sug'urta</span>
+                <span class="badge badge-secondary mb-2 ml-1">nima uchun</span>
+                <span class="badge badge-secondary mb-2 ml-1">uy-joy sug'urtasi</span>
+                <span class="badge badge-secondary mb-2 ml-1">savol</span>
+                <span class="badge badge-secondary mb-2 ml-1">kofalot</span>
+                <span class="badge badge-secondary mb-2 ml-1">yangi sug'urta</span>
+                <span class="badge badge-secondary mb-2 ml-1">nima uchun</span>
+                <span class="badge badge-secondary mb-2 ml-1">uy-joy sug'urtasi</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+
+      tinymce.init({
+        selector: 'textarea',
+        menubar: false,
+        plugins: [
+            'advlist autolink lists charmap print preview anchor textcolor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table contextmenu paste code help'
+        ],
+        toolbar: 'undo redo | bold italic underline strikethrough code backcolor | alignleft aligncenter alignright alignjustify | outdent indent | help',
+        content_css: [
+            '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+            '//www.tinymce.com/css/codepen.min.css']
+      });
+    </script>
+{% endblock %}
